@@ -1,10 +1,19 @@
-﻿using System
-Console.Write("Digite a primeira nota: ");
-double nota1 = Convert.ToDouble(Console.ReadLine());
+﻿using System;
 
-Console.Write("Digite a segunda nota: ");
-double nota2 = Convert.ToDouble(Console.ReadLine());
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("=== Calculadora Escolar ===");
 
-double soma = nota1 + nota2;
+        Console.Write("Digite a primeira nota: ");
+        double nota1 = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine($"Soma das notas: {soma}");
+        Console.Write("Digite a segunda nota: ");
+        double nota2 = Convert.ToDouble(Console.ReadLine());
+
+        double soma = nota1 + nota2;
+
+        Console.WriteLine($"Soma das notas: {soma}");
+    }
+}
